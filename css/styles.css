@@ -1,19 +1,16 @@
 *{
     box-sizing: border-box;
 }
-.col{
-    width: 100%;
-}
 h1{
-   margin-left: 15px;
-   text-align: center; 
+    margin-bottom: 15px;
+    align-content: center;
 }
 
-/* Responsive Design Rules */
-/* Large Screen */
-@media (min-width: 992px ) {
+/* Responsive Designs*/
+/* Large Screens */
+@media (min-width: 992px){
     .col-lg-4{
-        float: :left;
+        float: left;
         border: 3px solid black;
     }
     .col-lg-4{
@@ -21,7 +18,7 @@ h1{
     }
 }
 /* Medium Screens */
-@media (min-width: 768px) and (max-width: 991px){
+@media(min-width: 787px) and (max-width: 991px ){
     .col-md-2{
         float: left;
         border: 3px solid black;
@@ -31,7 +28,7 @@ h1{
     }
 }
 /* Small Screens */
-@media (max-width: 767px){
+@media(max-width: 786px){
     .col-sm-1{
         float: left;
         border: 3px solid black;
