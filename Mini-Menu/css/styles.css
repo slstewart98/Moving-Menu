@@ -2,3 +2,35 @@ h1{
    margin-left: 15px;
    text-align: center; 
 }
+
+/* Responsive Design Rules */
+/* Large Screen */
+@media (min-width: 992px ) {
+    .col-lg-4{
+        float: :left;
+        border: 3px solid black;
+    }
+    .col-lg-4{
+        width: 33.33%;
+    }
+}
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 991px){
+    .col-md-2{
+        float: left;
+        border: 3px solid black;
+    }
+    .col-md-2{
+        width: 50%;
+    }
+}
+/* Small Screens */
+@media (max-width: 767px){
+    .col-sm-1{
+        float: left;
+        border: 3px solid black;
+    }
+    .col-sm-1{
+        width: 100%;
+    }
+}
