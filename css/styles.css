@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+.col{
+    width: 100%;
+}
 h1{
     margin-bottom: 15px;
     align-content: center;
