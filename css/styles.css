@@ -6,7 +6,7 @@ h1{
     text-align: center;
 }
 .Chicken{
-    box-sizing: border-box;
+    box-sizing: border-box; /* Makes it so that the content stays inside the window and does not extend past the border set below*/
     background-color: rgb(100,150,203);
     text-align: center;
     border: 3px solid black;
@@ -37,10 +37,10 @@ h1{
     box-sizing: border-box;
     text-align: center;
     border: 3px solid black;
-    width: 50%;
+    width: 50%; /* content width in relation to the window */
     background-color: red;
-    position: absolute;
-    top: 10px;
+    position: absolute; /* makes boxes position static inside the window*/
+    top: 10px; /* this and "right" are used when position is absolute*/
     right: 10px;
     
     
