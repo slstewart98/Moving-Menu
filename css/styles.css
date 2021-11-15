@@ -1,0 +1,40 @@
+.col{
+    width: 100%;
+}
+h1{
+   text-align: center;
+   margin-bottom: 25px; 
+}
+
+.Chicken{
+    border-style: borde;
+    background-color: rgb(200,205,400);
+    margin-top: auto;
+    margin-right: auto;
+    padding: 10px;
+
+}
+/* Large Screens*/
+@media(min-width: 992px){
+    .col-lg-4{
+        position: relative;
+        width: 33.33%;
+        float: left;
+    }
+}
+/* Medium Screens*/
+@media (min-width: 789px) and (max-width: 991px){
+    .col-md-2{
+        position: relative;
+        width: 50%;
+        float: left;
+    }
+}
+/* Small Screens */
+@media (max-width: 787px){
+    .col-sm-1{
+        position: relative;
+        width: 100%;
+        float: left;
+    }
+}
