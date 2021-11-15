@@ -1,5 +1,8 @@
-.col{
+.row{
     width: 100%;
+}
+.col{
+    position: relative;
 }
 h1{
    text-align: center;
@@ -7,34 +10,71 @@ h1{
 }
 
 .Chicken{
-    border-style: borde;
+    box-sizing: border-box;
+    border: 4px solid black;
     background-color: rgb(200,205,400);
-    margin-top: auto;
-    margin-right: auto;
+    margin: 10px;
     padding: 10px;
 
 }
+.Beef{
+    box-sizing: border-box;
+    border: 4px solid black;
+    background-color: rgb(200,205,400);
+    margin: 10px;
+    padding: 10px;
+}
+.Vegetables{
+    box-sizing: border-box;
+    border: 4px solid black;
+    background-color: rgb(200,205,400);
+    margin: 10px;
+    padding: 10px;
+}
+.name{
+    position: absolute;
+    background-color: coral;
+    border: 3px solid black;
+    padding: 5px;
+    width: 50%;
+    right: 10px;
+    top:10px;
+    text-align: center;
+    
+}
+.item{
+    text-align: center;
+    padding:60px 0px 0px 0px;
+}
+
 /* Large Screens*/
 @media(min-width: 992px){
-    .col-lg-4{
-        position: relative;
-        width: 33.33%;
+    .col{
         float: left;
+    }
+    .col-lg-4{
+        width: 33.33%;
     }
 }
 /* Medium Screens*/
 @media (min-width: 789px) and (max-width: 991px){
-    .col-md-2{
-        position: relative;
-        width: 50%;
+    .col{
         float: left;
+    }
+    .col-md-2{
+        width: 50%;
+    }
+    .col-md-12{
+        width: 100%;
     }
 }
 /* Small Screens */
 @media (max-width: 787px){
-    .col-sm-1{
-        position: relative;
-        width: 100%;
+    .col{
         float: left;
+    }
+    .col-sm-1{
+        
+        width: 100%;
     }
 }
