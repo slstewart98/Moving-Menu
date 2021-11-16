@@ -2,92 +2,85 @@
 <!-- # My attempt at making a little mini menu from some notes and memory from my Coursera practive -->
 <!-- I will be putting my successful css code here so I can continue to keep replecating this page until it feels natual for me and I feel confident that I understand every part of it -->
 <!-- 
-.col{
+.row{
     width: 100%;
 }
-h1{
-    margin-bottom: 15px;
-    text-align: center;
+.col{
+    position: relative;
 }
-.Chicken{
-    box-sizing: border-box; /* Makes it so that the content stays inside the window and does not extend past the border set below*/
-    background-color: rgb(100,150,203);
-    text-align: center;
-    border: 3px solid black;
-    margin: 10px; /* put 10px of space all around window*/
-    padding: 60px 10px 10px 10px; /* controls spacing inside window */
+h1{
+   text-align: center;
+   margin-bottom: 25px; 
 }
 
+.Chicken{
+    box-sizing: border-box;
+    border: 4px solid black;
+    background-color: rgb(200,205,400);
+    margin: 10px;
+    padding: 10px;
+    font: helvetica;
+
+}
 .Beef{
     box-sizing: border-box;
-    background-color: rgb(100,150,203);
-    text-align: center;
-    border: 3px solid black;
-    margin: 10px; /* put 10px of space all around window*/
-    padding: 60px 10px 10px 10px; /* controls spacing inside window */
-
+    border: 4px solid black;
+    background-color: rgb(200,205,400);
+    margin: 10px;
+    padding: 10px;
 }
 .Vegetables{
     box-sizing: border-box;
-    background-color: rgb(100,150,203);
-    text-align: center;
-    border: 3px solid black;
-    margin: 10px; /* put 10px of space all around window*/
-    padding: 60px 10px 10px 10px; /* controls spacing inside window */
-   
-    
+    border: 4px solid black;
+    background-color: rgb(200,205,400);
+    margin: 10px;
+    padding: 10px;
 }
 .name{
-    box-sizing: border-box;
-    text-align: center;
+    position: absolute;
+    background-color: coral;
     border: 3px solid black;
-    width: 50%; /* content width in relation to the window */
-    background-color: red;
-    position: absolute; /* makes boxes position static inside the window*/
-    top: 10px; /* this and "right" are used when position is absolute*/
+    padding: 5px;
+    width: 50%;
     right: 10px;
-    
-    
+    top:10px;
+    text-align: center;
     
 }
-
 .item{
-    margin-top: 25px;
-    text-align: left;
+    text-align: center;
+    padding:60px 0px 0px 0px;
 }
 
-/* Responsive Designs*/
-/* Large Screens */
-@media (min-width: 992px){
-    .col-lg-4{
+/* Large Screens*/
+@media(min-width: 992px){
+    .col{
         float: left;
-
     }
     .col-lg-4{
         width: 33.33%;
-        position: relative;
     }
 }
-/* Medium Screens */
-@media(min-width: 787px) and (max-width: 991px ){
-    .col-md-2{
+/* Medium Screens*/
+@media (min-width: 789px) and (max-width: 991px){
+    .col{
         float: left;
-        
     }
     .col-md-2{
         width: 50%;
-        position: relative;
+    }
+    .col-md-12{
+        width: 100%;
     }
 }
 /* Small Screens */
-@media(max-width: 786px){
-    .col-sm-1{
+@media (max-width: 787px){
+    .col{
         float: left;
-
     }
     .col-sm-1{
+        
         width: 100%;
-        position: relative;
     }
 }
 -->
