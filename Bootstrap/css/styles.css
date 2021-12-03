@@ -1,0 +1,12 @@
+.row{
+    width: 100%;
+}
+h1{
+    text-align: center;
+
+}
+.col{
+    border: 5px solid green;
+    margin: auto;
+    padding: 5px;
+}
