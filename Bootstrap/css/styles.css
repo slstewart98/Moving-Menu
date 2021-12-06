@@ -1,86 +1,82 @@
-*{
-    box-sizing: border-box; /* makes it so that the content and the border are inside the main container. So if we had all this inside one big box, 
-    and then gave the content a border, then the border might extend past the big boxes borders. This function puts the contents added borders inside the big box */
-}
 .row{
     width: 100%;
 }
-h1{
-    text-align: center;
-    margin: 20px;
-
-}
 .col{
-    margin: 5px;
-}
-.Chicken{
-    height: 150px;
     position: relative;
-    text-align: center;
-    padding: 55px;
-    margin: 5px;
-    
+}
+h1{
+   text-align: center;
+   margin-bottom: 25px; 
+}
+
+.Chicken{
+    box-sizing: border-box; /* This makes it so that any text added will be the 
+    contained in the container above it in the html*/
+    border: 4px solid black;
+    background-color: rgb(200,205,400);
+    margin: 10px;
+    padding: 10px;
+    font: helvetica;
+
 }
 .Beef{
-    height: 150px;
-    position: relative;
-    text-align: center;
-    padding: 55px;
-    margin: 5px;
-    
+    box-sizing: border-box;
+    border: 4px solid black;
+    background-color: rgb(200,205,400);
+    margin: 10px;
+    padding: 10px;
 }
 .Vegetables{
-    height: 150px;
-    position: relative;
-    text-align: center;
-    padding: 55px;
-    margin: 5px;
-    
-}
-
-
-.name{
-    border: 2px solid black;
-    position: absolute;
-    top: -6px;
-    right: -7px;
-    width: 50%;
+    box-sizing: border-box;
+    border: 4px solid black;
+    background-color: rgb(200,205,400);
+    margin: 10px;
     padding: 10px;
-    margin-bottom: 5px;
-   
+}
+.name{
+    position: absolute;
+    background-color: coral;
+    border: 3px solid black;
+    padding: 5px;
+    width: 50%;
+    right: 10px;
+    top:10px;
+    text-align: center;
     
 }
+.item{
+    text-align: center;
+    padding:60px 0px 0px 0px;
+}
 
-/* Large Screens */
-@media (min-width: 992px){
-    .col-lg-4{
+/* Large Screens*/
+@media(min-width: 992px){
+    .col{
         float: left;
-        border: 2px solid black;
     }
     .col-lg-4{
-        width: 32.5%;
+        width: 33.33%;
     }
 }
-/* Medium Screens */
-@media(min-width: 768px) and (max-width: 991px){
-    .col-md-2, .col-md-12{
+/* Medium Screens*/
+@media (min-width: 789px) and (max-width: 991px){
+    .col{
         float: left;
-        border: 2px solid black;
     }
     .col-md-2{
-        width: 50%
+        width: 50%;
     }
     .col-md-12{
-        width: 100%
+        width: 100%;
     }
 }
-/* small screens */
-@media(max-width: 767px){
-    .col-sm-1{
+/* Small Screens */
+@media (max-width: 787px){
+    .col{
         float: left;
-        border: 2px solid black;
     }
     .col-sm-1{
+        
         width: 100%;
     }
 }
